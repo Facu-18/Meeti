@@ -1,0 +1,32 @@
+<main class="contenedor contenedor-formularios">
+    <h1> <%= nombrePagina %></h1>
+
+    <form action="/crear-cuenta" method="POST" class="default-form">
+        <div class="campo">
+            <label>E-mail</label>
+            <input type="email" name="email" placeholder="Tu email">
+        </div>
+        <div class="campo">
+            <label>Nombre</label>
+            <input type="text" name="nombre" placeholder="Tu nombre">
+        </div>
+        <div class="campo">
+            <label>Contraseña</label>
+            <input type="password" name="password" placeholder="Tu Contraseña">
+        </div>
+        <div class="campo">
+            <label>Repite tu Contraseña</label>
+            <input type="password" name="repetir_password" placeholder="Repite tu contraseña">
+        </div>
+        <div class="campo enviar">
+            <input class="btn btn-rosa" type="submit" name="enviar" value="Crear Cuenta">
+        </div>
+    </form>
+
+    <div class="campo google">
+        <img src="../img/descarga.png" alt="Logo de Google" class="google-logo">
+        <a href="/auth/google" class="btn btn-google">Regístrate con Google</a>
+    </div>
+    
+
+</main>
